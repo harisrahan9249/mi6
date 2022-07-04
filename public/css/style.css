@@ -20,7 +20,11 @@ body {
   margin-left: 2rem;
 }
 .nav-panel p a {
+<<<<<<< HEAD
   color: wheat;
+=======
+  color: white;
+>>>>>>> 57281df91f6a8215299b75401632b1f47de077d2
   text-decoration: none;
 }
 

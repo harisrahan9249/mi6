@@ -11,8 +11,13 @@
 <body>
     <div class="nav-panel">
         <img class="seal" src="/images/mi6-seal.png" alt="MI6 Seal">
+<<<<<<< HEAD
         <p> <a href="">Home</a> </p>
         <p><a href="">People of Interest</a></p>
+=======
+        <p> <a href="/"> Home </a></p>
+        <p> <a href="/people-of-interest"> People of Interest </a></p>
+>>>>>>> 57281df91f6a8215299b75401632b1f47de077d2
         <div class="nav-control">
             <button><</button>
         </div>
