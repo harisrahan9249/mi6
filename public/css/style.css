@@ -19,6 +19,10 @@ body {
 .nav-panel p {
   margin-left: 2rem;
 }
+.nav-panel p a {
+  color: wheat;
+  text-decoration: none;
+}
 
 .seal {
   width: 10rem;
