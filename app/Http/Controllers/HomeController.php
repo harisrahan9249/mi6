@@ -9,8 +9,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $person = Person::find(10);
-
-        dd($person->aliases);
+        // $person = Person::find(10);
+        // dd($person->aliases);
+        return view('home.index');
     }
 }
