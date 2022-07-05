@@ -8,15 +8,18 @@ export default function App() {
     const [selected_status, setSelectedStatus] = useState('');
 
     const fetchData = async () => {
-        const response = await fetch('api/people-of-interest');
+        const response = await fetch('api/people-of-interest'+'?status=' + encodeURIComponent(selected_status));
         const parsedRespose = await response.json();
+        console.log('api/people-of-interest'+'&status=' + encodeURIComponent(selected_status));
         console.log(parsedRespose);
         setData(parsedRespose);
+        
+
     }
 
     useEffect(() => {
         fetchData();
-    }, []);
+    }, [selected_status]);
 
     return (
         data == null
