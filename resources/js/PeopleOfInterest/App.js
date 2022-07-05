@@ -21,6 +21,7 @@ export default function App() {
         data == null
             ? <h1>Loading</h1>
             : <div className="">
+                <StatusFilter />
                 {data.map((person, index) => (
                     <><p key={index}>{person.name} is {person.occupation}</p>
                         <p>Known Aliases: </p>
@@ -30,7 +31,7 @@ export default function App() {
                         </ul>
                     </>
                 ))}
-                <StatusFilter />
+                
             </div>
     )
 }
