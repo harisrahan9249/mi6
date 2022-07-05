@@ -8,9 +8,17 @@ use App\Models\Person;
 
 class PersonController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $people = Person::with('aliases')->get();
+        $status = $request->input('status');
+        // dd($request->input('status'));
+        if (!empty($status)) {
+            $people = Person::with('aliases')
+                ->where('status_id', '=', $status)
+                ->get();
+        } else {
+            $people = Person::with('aliases')->get();
+        }
         return $people;
     }
 }
