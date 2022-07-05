@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import StatusFilter from './StatusFilter';
 
 export default function App() {
 
@@ -29,6 +30,7 @@ export default function App() {
                         </ul>
                     </>
                 ))}
+                <StatusFilter />
             </div>
     )
 }
